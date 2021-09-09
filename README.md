@@ -5,13 +5,10 @@
 
 ```java
 CoreCodeDebug codeDebug = new CoreCodeDebug();
-Method solutionMethod = codeDebug
-    .getSolutionMethod(Solution.class);
+Method solutionMethod = codeDebug.getSolutionMethod(Solution.class);
 Solution solution = new Solution();
-Object[] inputParameters = codeDebug
-    .getInputParameter(solutionMethod);
-Object result = solutionMethod
-    .invoke(solution, inputParameters);
+Object[] inputParameters = codeDebug.getInputParameter(solutionMethod);
+Object result = solutionMethod.invoke(solution, inputParameters);
 codeDebug.outputResult(result);
 ```
 
